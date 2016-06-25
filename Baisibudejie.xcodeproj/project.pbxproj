@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252A7CDD1D1E931500B0314D /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CDC1D1E931500B0314D /* IJKMediaFramework.framework */; };
+		252A7CE01D1E939A00B0314D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CDF1D1E939A00B0314D /* libz.tbd */; };
+		252A7CE21D1E93A400B0314D /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CE11D1E93A400B0314D /* libbz2.tbd */; };
+		252A7CE81D1E93D400B0314D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CE71D1E93D400B0314D /* CoreMedia.framework */; };
+		252A7CE91D1E93E600B0314D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CE51D1E93C500B0314D /* VideoToolbox.framework */; };
 		257321D71CE18FFF006AEAC4 /* YMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321D51CE18FFF006AEAC4 /* YMWebViewController.m */; };
 		257321D81CE18FFF006AEAC4 /* YMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */; };
 		257321E01CE1ACFE006AEAC4 /* YMPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 257321DE1CE1ACFE006AEAC4 /* YMPublishView.m */; };
@@ -83,6 +88,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252A7CDC1D1E931500B0314D /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = Baisibudejie/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		252A7CDF1D1E939A00B0314D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		252A7CE11D1E93A400B0314D /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		252A7CE31D1E93B600B0314D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		252A7CE51D1E93C500B0314D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		252A7CE71D1E93D400B0314D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		257321D41CE18FFF006AEAC4 /* YMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMWebViewController.h; sourceTree = "<group>"; };
 		257321D51CE18FFF006AEAC4 /* YMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMWebViewController.m; sourceTree = "<group>"; };
 		257321D61CE18FFF006AEAC4 /* YMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMWebViewController.xib; sourceTree = "<group>"; };
@@ -217,7 +228,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252A7CE91D1E93E600B0314D /* VideoToolbox.framework in Frameworks */,
+				252A7CE81D1E93D400B0314D /* CoreMedia.framework in Frameworks */,
+				252A7CE21D1E93A400B0314D /* libbz2.tbd in Frameworks */,
+				252A7CE01D1E939A00B0314D /* libz.tbd in Frameworks */,
 				37D70C12519C3193D03D3BDC /* libPods.a in Frameworks */,
+				252A7CDD1D1E931500B0314D /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +313,12 @@
 		82574C484EFD974DA7C2B493 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				252A7CE71D1E93D400B0314D /* CoreMedia.framework */,
+				252A7CE51D1E93C500B0314D /* VideoToolbox.framework */,
+				252A7CE31D1E93B600B0314D /* OpenGLES.framework */,
+				252A7CE11D1E93A400B0314D /* libbz2.tbd */,
+				252A7CDF1D1E939A00B0314D /* libz.tbd */,
+				252A7CDC1D1E931500B0314D /* IJKMediaFramework.framework */,
 				53D7B138340E9B3F7D25A624 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -955,6 +977,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Baisibudejie",
+				);
 				GCC_PREFIX_HEADER = Baisibudejie/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -970,6 +996,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Baisibudejie",
+				);
 				GCC_PREFIX_HEADER = Baisibudejie/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = Baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

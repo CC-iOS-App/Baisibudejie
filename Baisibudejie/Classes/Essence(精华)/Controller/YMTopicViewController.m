@@ -7,15 +7,15 @@
 //
 
 #import "YMTopicViewController.h"
-#import "AFHTTPSessionManager.h"
-#import "UIImageView+WebCache.h"
 #import "YMTopic.h"
-#import "MJExtension.h"
-#import "MJRefresh.h"
 #import "YMTopicCell.h"
 #import "YMCommentViewController.h"
 #import "UIView+YMExtension.h"
 #import "YMNewViewController.h"
+#import "UIImageView+WebCache.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
 
 @interface YMTopicViewController ()
 

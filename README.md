@@ -165,33 +165,9 @@ UIWindowLevelNormal < UIWindowLevelStatusBar < UIWindowLevelAlert
 
 使用的是 B 展开源播放框架 ijkplayer，[下载链接](https://github.com/Bilibili/ijkplayer)，下面是一些配置过程。
 
+配置过程可以看 [这里](http://www.jianshu.com/p/5218f8c952fb)
 
-首先配置环境，需要安装 homebrew，git，yasm （需要ruby环境）。
 
-然后把项目克隆到本地，下载并编译ffmpeg：
-
-```
-git clone https://github.com/Bilibili/ijkplayer.git ijkplayer-ios
-```
-
-下载完成后，进行如下操作，就会下载 ffmpeg 了。
-
-```
-cd ijkplayer-ios
-
-git checkout -B latest k0.4.5.1
-
-./init-ios.sh
-```
-
-下载完成后，ios 文件夹里会就会多几个文件夹，然后编译 ffmpeg，可能会卡住，稍等，不要着急，静静地等它编译完吧~
-
-```
-./compile-ffmpeg.sh clean
-./compile-ffmpeg.sh all
-```
-
-最后导入播放器并用 xcode 打开
 
 
 
