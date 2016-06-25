@@ -19,6 +19,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *playcountLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+
 @end
 
 @implementation YMVoiceView
@@ -44,13 +46,26 @@
     //如果发现控件的位置和尺寸不是自己设置的，那么有可能是自动伸缩属性导致
     self.autoresizingMask = UIViewAutoresizingNone;
     self.imageView.userInteractionEnabled = YES;
-    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPicture)] ];
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPicture)]];
+}
+
+-(void)setPlayButton:(UIButton *)playButton {
+    _playButton = playButton;
+    [self.playButton setImage:[UIImage imageNamed:@"playButtonPlay"] forState:UIControlStateNormal];
+    [self.playButton setImage:[UIImage imageNamed:@"playButtonPause"] forState:UIControlStateSelected];
 }
 
 -(void)showPicture {
-    YMShowPictureViewController *showPictureVC = [[YMShowPictureViewController alloc] init];
-    showPictureVC.topic = self.topic;
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPictureVC animated:YES completion:nil];
+    self.playButton.selected = !self.playButton.isSelected;
+//    YMShowPictureViewController *showPictureVC = [[YMShowPictureViewController alloc] init];
+//    showPictureVC.topic = self.topic;
+//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPictureVC animated:YES completion:nil];
 }
+
+- (IBAction)playButtonClick:(UIButton *)sender {
+    sender.selected = !sender.isSelected;
+    
+}
+
 
 @end

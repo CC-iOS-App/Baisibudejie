@@ -74,7 +74,7 @@
         CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * YMTopicCellMargin, MAXFLOAT);
         // 计算文字的高度
         CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
-        // c文字部分的高度
+        // 文字部分的高度
         _cellHeight = YMTopicCellTextY + textH + YMTopicCellMargin;
         //根据段子的类型来计算cell的高度
         if (self.type == YMTopicTypePicture) { //图片帖子
@@ -89,7 +89,7 @@
             
             //计算图片控件的frame
             CGFloat pictureX = YMTopicCellMargin;
-            CGFloat pictureY = YMTopicCellTextY + textH + YMTopicCellMargin;
+            CGFloat pictureY = YMTopicCellTextY + textH + YMTopicCellMargin * 2;
             _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
             //图片的高度
             _cellHeight += pictureH + YMTopicCellMargin;
