@@ -163,9 +163,6 @@ UIWindowLevelNormal < UIWindowLevelStatusBar < UIWindowLevelAlert
 
 ## 添加视频播放功能
 
-使用的是 B 展开源播放框架 ijkplayer，[下载链接](https://github.com/Bilibili/ijkplayer)，下面是一些配置过程。
-
-配置过程可以看 [这里](http://www.jianshu.com/p/5218f8c952fb)
 
 
 

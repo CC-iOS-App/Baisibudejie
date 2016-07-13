@@ -9,9 +9,10 @@
 #import "YMVideoView.h"
 #import "YMTopic.h"
 #import "UIImageView+WebCache.h"
-#import "YMShowPictureViewController.h"
+#import "LRLAVPlayerView.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface YMVideoView ()
+@interface YMVideoView ()<LRLAVPlayDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -21,6 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 
+@property (nonatomic, weak) LRLAVPlayerView *avplayerView;
 @end
 
 @implementation YMVideoView
@@ -57,16 +59,26 @@
 
 -(void)showPicture {
     self.playButton.selected = !self.playButton.isSelected;
-//    YMShowPictureViewController *showPictureVC = [[YMShowPictureViewController alloc] init];
-//    showPictureVC.topic = self.topic;
-//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPictureVC animated:YES completion:nil];
 }
 
-- (IBAction)playButton:(UIButton *)sender {
-    sender.selected = !sender.isSelected;
-    
-    
-    
+- (IBAction)playButtonClick:(UIButton *)sender {
+    sender.hidden = YES;
+    //固定的实例化方法
+    self.avplayerView = [LRLAVPlayerView avplayerViewWithVideoUrlStr:self.topic.videouri andInitialHeight:218 andSuperView:self];
+    self.avplayerView.delegate = self;
+    [self addSubview:self.avplayerView];
+    __weak YMVideoView * weakSelf = self;
+    //我的播放器依赖 Masonry 第三方库
+    [self.avplayerView setPositionWithPortraitBlock:^(MASConstraintMaker *make) {
+        make.top.equalTo(weakSelf);
+        make.left.equalTo(weakSelf);
+        make.right.equalTo(weakSelf);
+        //添加竖屏时的限制, 这条也是固定的, 因为: _videoHeight 是float* 类型, 我可以通过它, 动态改视频播放器的高度;
+        make.height.equalTo(@(*(weakSelf.avplayerView->_videoHeight)));
+    } andLandscapeBlock:^(MASConstraintMaker *make) {
+        make.width.equalTo(@(SCREEN_HEIGHT));
+        make.height.equalTo(@(SCREEN_WIDTH));
+        make.center.equalTo(Window);
+    }];
 }
-
 @end

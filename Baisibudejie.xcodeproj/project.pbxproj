@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25016D021D364BDA0038D37E /* NSString+YMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 25016D011D364BDA0038D37E /* NSString+YMExtension.m */; };
+		25016D101D364F140038D37E /* LRLAVPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 25016D061D364F140038D37E /* LRLAVPlayerTool.m */; };
+		25016D111D364F140038D37E /* LRLAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25016D081D364F140038D37E /* LRLAVPlayerView.m */; };
+		25016D121D364F140038D37E /* LRLAVPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25016D091D364F140038D37E /* LRLAVPlayerView.xib */; };
+		25016D131D364F140038D37E /* LRLLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25016D0B1D364F140038D37E /* LRLLightView.m */; };
+		25016D141D364F140038D37E /* LRLLightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25016D0C1D364F140038D37E /* LRLLightView.xib */; };
+		25016D151D364F140038D37E /* TimeSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25016D0E1D364F140038D37E /* TimeSheetView.m */; };
+		25016D161D364F140038D37E /* TimeSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25016D0F1D364F140038D37E /* TimeSheetView.xib */; };
 		252A7CDD1D1E931500B0314D /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CDC1D1E931500B0314D /* IJKMediaFramework.framework */; };
 		252A7CE01D1E939A00B0314D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CDF1D1E939A00B0314D /* libz.tbd */; };
 		252A7CE21D1E93A400B0314D /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A7CE11D1E93A400B0314D /* libbz2.tbd */; };
@@ -88,6 +96,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25016D001D364BDA0038D37E /* NSString+YMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YMExtension.h"; sourceTree = "<group>"; };
+		25016D011D364BDA0038D37E /* NSString+YMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMExtension.m"; sourceTree = "<group>"; };
+		25016D041D364F140038D37E /* LRLAVPlayerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLAVPlayerDefine.h; sourceTree = "<group>"; };
+		25016D051D364F140038D37E /* LRLAVPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLAVPlayerTool.h; sourceTree = "<group>"; };
+		25016D061D364F140038D37E /* LRLAVPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLAVPlayerTool.m; sourceTree = "<group>"; };
+		25016D071D364F140038D37E /* LRLAVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLAVPlayerView.h; sourceTree = "<group>"; };
+		25016D081D364F140038D37E /* LRLAVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLAVPlayerView.m; sourceTree = "<group>"; };
+		25016D091D364F140038D37E /* LRLAVPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRLAVPlayerView.xib; sourceTree = "<group>"; };
+		25016D0A1D364F140038D37E /* LRLLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLLightView.h; sourceTree = "<group>"; };
+		25016D0B1D364F140038D37E /* LRLLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLLightView.m; sourceTree = "<group>"; };
+		25016D0C1D364F140038D37E /* LRLLightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRLLightView.xib; sourceTree = "<group>"; };
+		25016D0D1D364F140038D37E /* TimeSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSheetView.h; sourceTree = "<group>"; };
+		25016D0E1D364F140038D37E /* TimeSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSheetView.m; sourceTree = "<group>"; };
+		25016D0F1D364F140038D37E /* TimeSheetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSheetView.xib; sourceTree = "<group>"; };
 		252A7CDC1D1E931500B0314D /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = Baisibudejie/IJKMediaFramework.framework; sourceTree = "<group>"; };
 		252A7CDF1D1E939A00B0314D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		252A7CE11D1E93A400B0314D /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
@@ -240,6 +262,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25016D031D364F140038D37E /* LRLAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				25016D041D364F140038D37E /* LRLAVPlayerDefine.h */,
+				25016D051D364F140038D37E /* LRLAVPlayerTool.h */,
+				25016D061D364F140038D37E /* LRLAVPlayerTool.m */,
+				25016D071D364F140038D37E /* LRLAVPlayerView.h */,
+				25016D081D364F140038D37E /* LRLAVPlayerView.m */,
+				25016D091D364F140038D37E /* LRLAVPlayerView.xib */,
+				25016D0A1D364F140038D37E /* LRLLightView.h */,
+				25016D0B1D364F140038D37E /* LRLLightView.m */,
+				25016D0C1D364F140038D37E /* LRLLightView.xib */,
+				25016D0D1D364F140038D37E /* TimeSheetView.h */,
+				25016D0E1D364F140038D37E /* TimeSheetView.m */,
+				25016D0F1D364F140038D37E /* TimeSheetView.xib */,
+			);
+			path = LRLAVPlayer;
+			sourceTree = "<group>";
+		};
 		257321D91CE1A978006AEAC4 /* Publish(发布) */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +432,7 @@
 		942851941CA4B8BD001D738D /* Essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
+				25016D031D364F140038D37E /* LRLAVPlayer */,
 				942851951CA4B8BD001D738D /* Controller */,
 				942851A21CA4B8BD001D738D /* Model */,
 				942851AB1CA4B8BD001D738D /* View */,
@@ -541,6 +583,8 @@
 				944CEB401CCC547200EE48CE /* UIImage+YJExtension.m */,
 				94F66DDD1CDD752500242ABC /* UIImageView+YMExtension.h */,
 				94F66DDE1CDD752500242ABC /* UIImageView+YMExtension.m */,
+				25016D001D364BDA0038D37E /* NSString+YMExtension.h */,
+				25016D011D364BDA0038D37E /* NSString+YMExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -728,11 +772,14 @@
 				9428522C1CA4B8BD001D738D /* YMRecommandViewController.xib in Resources */,
 				942852241CA4B8BD001D738D /* YMVideoView.xib in Resources */,
 				9428520D1CA4B8BD001D738D /* Main.storyboard in Resources */,
+				25016D121D364F140038D37E /* LRLAVPlayerView.xib in Resources */,
+				25016D161D364F140038D37E /* TimeSheetView.xib in Resources */,
 				942852281CA4B8BD001D738D /* YMFriendTrendsViewController.xib in Resources */,
 				9428520C1CA4B8BD001D738D /* LaunchScreen.storyboard in Resources */,
 				942851811CA4B7D8001D738D /* Main.storyboard in Resources */,
 				942852201CA4B8BD001D738D /* YMTopicCell.xib in Resources */,
 				9428521E1CA4B8BD001D738D /* YMRecommandTagCell.xib in Resources */,
+				25016D141D364F140038D37E /* LRLLightView.xib in Resources */,
 				942852221CA4B8BD001D738D /* YMTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,6 +842,7 @@
 				257321E51CE1ADAF006AEAC4 /* YMPublishViewController.m in Sources */,
 				9428523F1CA4B8BD001D738D /* AppDelegate.m in Sources */,
 				942852411CA4B8BD001D738D /* YMConst.m in Sources */,
+				25016D021D364BDA0038D37E /* NSString+YMExtension.m in Sources */,
 				942852311CA4B8BD001D738D /* YMRecommandUserCell.m in Sources */,
 				942852231CA4B8BD001D738D /* YMVideoView.m in Sources */,
 				942852111CA4B8BD001D738D /* YMRecommandTagsViewController.m in Sources */,
@@ -811,6 +859,8 @@
 				9428521B1CA4B8BD001D738D /* YMCommentHeaderView.m in Sources */,
 				942852441CA4B8BD001D738D /* YMPushGuide.m in Sources */,
 				942852391CA4B8BD001D738D /* YMNavigationController.m in Sources */,
+				25016D151D364F140038D37E /* TimeSheetView.m in Sources */,
+				25016D101D364F140038D37E /* LRLAVPlayerTool.m in Sources */,
 				942851781CA4B7D8001D738D /* main.m in Sources */,
 				257321D71CE18FFF006AEAC4 /* YMWebViewController.m in Sources */,
 				942852291CA4B8BD001D738D /* YMLoginRegisterController.m in Sources */,
@@ -818,6 +868,7 @@
 				94F66DDF1CDD752500242ABC /* UIImageView+YMExtension.m in Sources */,
 				942852351CA4B8BD001D738D /* Foundation+Log.m in Sources */,
 				9428523D1CA4B8BD001D738D /* YMMeViewController.m in Sources */,
+				25016D111D364F140038D37E /* LRLAVPlayerView.m in Sources */,
 				257321E91CE1AE55006AEAC4 /* YMPostViewController.m in Sources */,
 				9428523C1CA4B8BD001D738D /* YMTopWindow.m in Sources */,
 				25DD462A1CE09A7D00E11FAC /* YMSquare.m in Sources */,
@@ -837,6 +888,7 @@
 				9428523B1CA4B8BD001D738D /* YMTabBar.m in Sources */,
 				942852371CA4B8BD001D738D /* UIBarButtonItem+YMExtension.m in Sources */,
 				9428521F1CA4B8BD001D738D /* YMTopicCell.m in Sources */,
+				25016D131D364F140038D37E /* LRLLightView.m in Sources */,
 				942852191CA4B8BD001D738D /* YMCommentCell.m in Sources */,
 				9428522B1CA4B8BD001D738D /* YMRecommandViewController.m in Sources */,
 				94F7B98A1CE15BF300B04612 /* YMSquareButton.m in Sources */,
