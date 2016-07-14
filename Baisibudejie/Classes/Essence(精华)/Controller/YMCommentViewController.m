@@ -93,7 +93,7 @@ static NSString *const commentID = @"comment";
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.tableView.mj_header endRefreshing];
-        [SVProgressHUD showErrorWithStatus:@"加载数据失败!" maskType:SVProgressHUDMaskTypeBlack];
+        [SVProgressHUD showErrorWithStatus:@"加载数据失败!"];
     }];
 }
 
@@ -132,7 +132,7 @@ static NSString *const commentID = @"comment";
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.tableView.mj_footer endRefreshing];
-        [SVProgressHUD showErrorWithStatus:@"加载数据失败!" maskType:SVProgressHUDMaskTypeBlack];
+        [SVProgressHUD showErrorWithStatus:@"加载数据失败!"];
     }];
 }
 

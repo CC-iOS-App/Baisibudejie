@@ -11,10 +11,10 @@
 #import "LRLLightView.h"
 #import "TimeSheetView.h"
 #import "LRLAVPlayerDefine.h"
-
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
+@class LRLAVPlayerView;
 
 typedef void(^LayoutBlock)(MASConstraintMaker * make);
 
@@ -31,6 +31,7 @@ typedef enum : NSUInteger {
 -(void)play;
 //暂停时调用的方法
 -(void)pause;
+
 @end
 
 @interface LRLAVPlayerView : UIView

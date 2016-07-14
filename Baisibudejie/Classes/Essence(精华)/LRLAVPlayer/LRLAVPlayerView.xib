@@ -34,7 +34,7 @@
                                 <action selector="exitFullScreen:" destination="iN0-l3-epB" eventType="touchUpInside" id="V3z-OS-wk6"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISl-Sp-TNr">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISl-Sp-TNr">
                             <rect key="frame" x="100" y="0.0" width="75" height="50"/>
                             <state key="normal" title="开启画中画">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

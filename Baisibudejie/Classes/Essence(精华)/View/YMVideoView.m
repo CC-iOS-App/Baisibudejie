@@ -64,11 +64,11 @@
 - (IBAction)playButtonClick:(UIButton *)sender {
     sender.hidden = YES;
     //固定的实例化方法
-    self.avplayerView = [LRLAVPlayerView avplayerViewWithVideoUrlStr:self.topic.videouri andInitialHeight:218 andSuperView:self];
+    self.avplayerView = [LRLAVPlayerView avplayerViewWithVideoUrlStr:self.topic.videouri andInitialHeight:self.topic.videoF.size.height andSuperView:self];
     self.avplayerView.delegate = self;
     [self addSubview:self.avplayerView];
     __weak YMVideoView * weakSelf = self;
-    //我的播放器依赖 Masonry 第三方库
+    
     [self.avplayerView setPositionWithPortraitBlock:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf);
         make.left.equalTo(weakSelf);
@@ -81,4 +81,5 @@
         make.center.equalTo(Window);
     }];
 }
+
 @end
